@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBSITE</title>
+    <link rel="stylesheet" href="styles.css">
+    
+  <!-- index.html -->
+ <body>
+<header>
+    <nav>
+      <a hrer="home.html">HOME</a>
+      <a href="PI.html">Personal Info</a>
+      <a href="education.html">Education</a>
+      <a href="work.html">Work Experince</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contacts.html">Contact</a>
+    </nav>
+  </header>
+  <section>
+    <h1>Welcome to My CV</h1>
+
+    <p>Find out more about me below.</p>
+    
+    <h2>Personal Information</h2>
+    <form method="POST" action="PI.html">
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="bio" placeholder="Short Bio"></textarea>
+      <button type="submit">Update Info</button>
+    </form>
+
+  </section>
+  
+  <!-- education.html -->
+<section>
+    <h2>Education</h2>
+    <form method="POST" action="/addEducation">
+      <input type="text" name="institution" placeholder="Institution" required />
+      <input type="text" name="degree" placeholder="Degree" required />
+      <input type="text" name="year" placeholder="Year" required />
+      <button type="submit">Add Education</button>
+    </form>
+  
+    <!-- Display Education Entries Here -->
+    <div id="education-list">
+      <!-- Loop through education records and display -->
+    
+      <h2> WORK EXPERINCE</h2>
+    <form method="POST" action="/updateWorkexperince">
+      <input type="text" name="prevoius work" placeholder="prevoius work" required />
+      <input type="text" name="position" placeholder="position" required />
+      <input type="text" name="year" placeholder="Year" required />
+      <button type="submit">Add WORK EXPERINCE</button>
+    </form>
+    
+    <h2> SKILLS</h2>
+    <form method="POST" action="/updateskills">
+      <input type="text" name="your skills" placeholder="your skills" required />
+      
+      <button type="submit">Add SKILLS</button>
+    </form>
+
+    <h2> PROJECTS</h2>
+    <form method="POST" action="/updatePROJECTS">
+      <input type="text" name="your PROJECTS" placeholder="your projects" required />
+      
+      <button type="submit">Add PROJECTS</button>
+    </form>
+
+    <h2> CONTACTS</h2>
+    <form method="POST" action="/updateCONTACTS">
+      <input type="text" name="your CONTACTS" placeholder="your CONTACTS" required />
+      
+      <button type="submit">Add CONTACTS</button>
+    </form>
+
+
+    </div>
+</section>
+
+    <script src="Express.js" defer></script>
+  
+</body>
+
+
+
+
+
